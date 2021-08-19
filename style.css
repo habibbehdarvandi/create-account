@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+    --body-background: #f3f3fb;
+    --container-background : #fff;
+    --google-color: #D44C3C;
+    --facebook-color: #487AB3;
+    --twitter-color :#1da1f2;
+    --text-color:#000;
+    --gray-color: #9CA7BE ;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    list-style: none;
+    font-family: Roboto , sans-serif;
+    font-size: 18px;
+}
+
+body{
+    background-color: var(--body-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    min-width: 500px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--container-background);
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.close_btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    color: #c2c2c2;
+    transition: all 0.3s;
+}
+
+.container h3{
+    margin: 3rem 0 1rem 0;
+}
+.btn_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    height: 50px;
+    width: 200px;
+    margin: 0.5rem 0;
+    background-color: #c2c2c2;
+    border-radius: 8px;
+    color: #000;
+}
+a{
+    transition: all 0.3s;
+}
+a.google{
+    background-color: var(--google-color);
+    color: #fff;
+}
+a.google:hover{
+    background-color: #c24538;
+}
+a.google:focus{
+    box-shadow: 0 0 8px 3px #d44b3c3a;
+}
+a.facebook{
+    background-color: var(--facebook-color);
+    color: #fff;
+}
+a.facebook:hover{
+    background-color: #426fa3;
+}
+a.facebook:focus{
+    box-shadow: 0 0 8px 3px #487ab333;
+}
+a.twitter{
+    background-color: var(--twitter-color);
+    color: #fff;
+}
+a.twitter:hover{
+    background-color: #1c96e2;
+}
+label{
+    margin: 1rem 0;
+    width: 80%;
+}
+label #checkbox{
+    margin-right: 0.5rem;
+    transform: scale(1.2);
+}
